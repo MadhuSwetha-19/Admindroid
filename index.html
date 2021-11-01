@@ -4,11 +4,153 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Admindroid</title>
+    <style>
+      *{                  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  /* Global */
+  
+body{
+      font-family: "Merriweather","sans-serif"; 
+      background-color: #2a2a2b ;
+      overflow-x: hidden ;    
+      transition: 0.5s; 
+      color: aliceblue;     
+}
+  
+ul{
+      list-style-type:none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+}
+
+section{
+    margin: 2rem 2rem;    
+}
+
+h1{
+    font: x-large;
+    font-weight: 800;
+}
+
+dd{
+    padding-left: 2rem;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; 
+}  
+
+.navbar{
+    width: 100%;
+    display:block;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: relative;
+    margin: 1.5rem 1.5rem;    
+}
+
+.navbar_items{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row; 
+}
+
+.navbar_brand{
+    width: 100%;
+    margin: 2rem;
+    font-size: larger;    
+}
+
+.hero_container{
+    margin-top: 4rem;
+    padding: 1rem 1rem;
+}
+
+.hero__container{
+  display: flex;  
+  justify-content: space-evenly;
+  margin-top: 3.5rem;
+}
+.hero__container > div {
+    border: 2px rgb(209, 209, 209) solid;
+    background-color: rgb(48, 47, 47);
+    margin: 1px 19px;
+    padding: 9px 6px;
+    width: 370px;
+    height: 220px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(61, 61, 61, 0.1),0 4px 6px -2px rgba(65, 65, 65, 0.05);
+}
+
+h4{
+    text-align: center;
+} 
+.about{
+   text-align: center;
+}
+
+.content_box{
+    padding: 5px 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill1{
+    border: 1px rgb(170, 170, 170) solid; 
+    text-align: center;
+    width:90px;
+    height: 22px;
+    margin: 6px ;
+    padding: 0px 20px;
+    border-radius: 0.4rem ;
+}
+.skill2{
+    border: 1px rgb(170, 170, 170)solid;  
+    text-align: center; 
+    padding:0px 0px;
+    margin: 7px 25px;
+    width:150px;
+    height: 22px; 
+    border-radius:0.4rem ; 
+}
+.skill3{
+    border: 1px rgb(170, 170, 170) solid;  
+    text-align: center;
+    padding:0px 4px; 
+    margin:7px 35px; 
+    width:120px;
+    height: 22px;
+    border-radius:0.4rem ; 
+}
+.skill4{
+    border: 1px rgb(170, 170, 170) solid;  
+    text-align: center;
+    padding:0px 4px; 
+    margin:6px 36px; 
+    width:340px;
+    height: 25px;
+    border-radius:0.4rem ; 
+}
+
+ .package{
+    text-align: center;
+    margin-top: 1rem;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -37,9 +179,9 @@
               <h4>Software Engineer</h4><br>
               <p class="about">Exploring new Technologies and implement innovate solutions.</p>
               <div class="content_box">
-                <div style="color:rgb(0, 109, 33)" class="skill1">C</div>
-                <div style="color:rgb(0, 109, 33)" class="skill2">Problem solving</div>
-                <div style="color:rgb(0, 109, 33)" class="skill3">Logical</div>
+                <div style="color:rgb(0, 133, 40)" class="skill1">C</div>
+                <div style="color:rgb(0, 133, 40)" class="skill2">Problem solving</div>
+                <div style="color:rgb(0, 133, 40)" class="skill3">Logical</div>
               </div>
               <div class="package">
                 <p>Package:5.60 Lakh per annum</p>
@@ -49,8 +191,8 @@
               <h4>Content Writer</h4><br>
               <p class="about">Creating content,including website content,blog posts and social media content.</p>
               <div class="content_box">
-                <div style="color:rgb(0, 109, 33);" class="skill2">Writing skills</div>
-                <div style="color:rgb(0, 109, 33);" class="skill2">creative thinking</div>                
+                <div style="color:rgb(0, 133, 40);" class="skill2">Writing skills</div>
+                <div style="color:rgb(0, 133, 40);" class="skill2">creative thinking</div>                
               </div>
               <div class="package">
                 <p>Package:4.20 Lakh per annum</p>
@@ -60,8 +202,8 @@
               <h4>Support Engineer</h4><br>
               <p class="about">Help our customers to find solutions to problems with the product</p>
               <div class="content_box">                
-                <div style="color:rgb(0, 109, 33)" class="skill4">Communication skills</div>
-                <div style="color:rgb(0, 109, 33)" class="skill4">Technology understanding</div>
+                <div style="color:rgb(0, 133, 40)" class="skill4">Communication skills</div>
+                <div style="color:rgb(0, 133, 40)" class="skill4">Technology understanding</div>
               </div>
               <div class="package">
                 <p>Package:4.20 Lakh per annum</p>
